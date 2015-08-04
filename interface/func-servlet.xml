@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<funcs>
+    <func name="APP_Login" class="com.trs.nfyq.appdev.function.AppLoginFunc"/>
+</funcs>
