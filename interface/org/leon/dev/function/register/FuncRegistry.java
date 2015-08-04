@@ -1,11 +1,11 @@
 package org.leon.dev.function.register;
 
-import com.trs.nfyq.appdev.function.exceptions.FunctionNotFoundException;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
+import org.leon.dev.function.exceptions.FunctionNotFoundException;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -65,7 +65,7 @@ public class FuncRegistry {
      * @param m_name
      * @return
      */
-    public static Class getMethodObject(String m_name) throws FunctionNotFoundException{
+    public static Class getMethodObject(String m_name) throws FunctionNotFoundException {
         if(!methods.containsKey(m_name)){
             throw new FunctionNotFoundException("方法未注册");
         }
