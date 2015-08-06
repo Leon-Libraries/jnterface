@@ -1,15 +1,14 @@
-package org.leon.dev.util.xmljson;
+package org.leon.dev.pojo;
 
-import java.util.List;
+import org.leon.dev.pojo.inter.Object_POJO;
 
 /**
- * Created by zealer on 15/6/21.
+ * Created by LeonWong on 15/8/4.
  */
-public class TestPerson{
+public class Demo_POJO implements Object_POJO{
     private String name;
     private int age;
     private String gender;
-    private List talent;
 
     public String getName() {
         return name;
@@ -33,13 +32,5 @@ public class TestPerson{
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public List getTalent() {
-        return talent;
-    }
-
-    public void setTalent(List talent) {
-        this.talent = talent;
     }
 }

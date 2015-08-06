@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 注册方法配置文件 -->
 <funcs>
-    <func name="APP_Login" class="com.trs.nfyq.appdev.function.AppLoginFunc"/>
+    <func name="Demo_Func" class="org.leon.dev.function.DemoFunc"/>
 </funcs>

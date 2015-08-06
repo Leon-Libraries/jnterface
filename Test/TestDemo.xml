@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <head>
+        <version>1.0</version>
+        <method>Demo_Func</method>
+    </head>
+    <params>
+        <name>LeonWong</name>
+        <age>23</age>
+    </params>
+</root>

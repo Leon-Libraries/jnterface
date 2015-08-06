@@ -9,11 +9,8 @@ import org.springframework.stereotype.Repository;
 public class SpringContextHelper implements ApplicationContextAware {
 
     protected static ApplicationContext context;
-   // private Logger log = Logger.getLogger(this.getClass());
     
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-    	//log.info("SPRING INJECT APPLICATIONCONTTEXT,IS IT NULL:");
-    	//log.info(applicationContext == null);
         context = applicationContext;
     }
 
