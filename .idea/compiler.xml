@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
+    <option name="DEFAULT_COMPILER" value="Eclipse" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -26,9 +26,8 @@
         <module name="jnterface" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="jnteface" target="1.5" />
-      <module name="jnterface" target="1.5" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="jnterface" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

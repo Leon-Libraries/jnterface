@@ -8,6 +8,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
+import org.junit.Assert;
+import org.junit.Test;
 import org.leon.dev.controller.writer.ResponseWriter;
 import org.leon.dev.function.exceptions.FunctionNotFoundException;
 import org.leon.dev.function.exceptions.ParamRequiredException;
@@ -255,6 +257,5 @@ public class ApplicationController {
     private void setSessionid(String sessionid) {
         this.sessionid = sessionid;
     }
-
 
 }

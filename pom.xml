@@ -55,6 +55,16 @@
       <version>2.2.2</version>
       <classifier>jdk15</classifier>
     </dependency>
+    <dependency>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.4.8</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-discovery</groupId>
+      <artifactId>commons-discovery</artifactId>
+      <version>0.5</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>jnterface</finalName>

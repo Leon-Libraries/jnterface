@@ -20,8 +20,9 @@ public class FunctionClassLoader implements ServletContextListener {
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         logger.info("[WebService功能方法正在加载]"+FunctionClassLoader.class.getName());
         FuncRegistry fr = new FuncRegistry();
+        FileInputStream fis = null;
         try{
-            FileInputStream fis = new FileInputStream(
+            fis = new FileInputStream(
                     new File(FunctionClassLoader.class.getClassLoader().getResource("/").getPath()+ "func-servlet.xml"));
             int temp;
             String xml = "";
@@ -36,6 +37,14 @@ public class FunctionClassLoader implements ServletContextListener {
         }catch (Exception e){
             logger.error("[WebService初始化功能配置文件失败，详见日志]");
             e.printStackTrace();
+        }finally {
+            try{
+                if (fis != null)fis.close();
+            }catch (IOException e){
+                e.printStackTrace();
+
+            }
+
         }
 
     }
