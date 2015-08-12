@@ -1,7 +1,6 @@
 package org.leon.dev.util.redis;
 
 import org.apache.log4j.Logger;
-import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
