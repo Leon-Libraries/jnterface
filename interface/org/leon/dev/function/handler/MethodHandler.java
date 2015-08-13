@@ -20,9 +20,8 @@ public class MethodHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object result = null;
-
+        //此处可以进行AOP编程扩展
         result = method.invoke(tar,args);
-
         return result;
     }
 }
