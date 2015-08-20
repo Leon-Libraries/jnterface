@@ -1,6 +1,7 @@
 package org.leon.dev.function;
 
 import org.leon.dev.controller.writer.ResponseWriter;
+import org.leon.dev.function.inter.AutowiredFromSpring;
 import org.leon.dev.function.inter.Method;
 import org.leon.dev.function.inter.Param;
 import org.leon.dev.pojo.Demo_POJO;
@@ -13,7 +14,7 @@ public class DemoFunc implements Method{
 
     private String dataType;
     @Param
-    private String name;
+    private String choice;
     @Param
     private Integer age;
     @Param(isRequired = false,defaultValue = "MALE")
@@ -24,7 +25,7 @@ public class DemoFunc implements Method{
         Demo_POJO demo_pojo = new Demo_POJO();
         demo_pojo.setAge(age);
         demo_pojo.setGender(gender);
-        demo_pojo.setName(name);
+        demo_pojo.setName(choice);
         return new ResponseWriter(dataType).writeObject(demo_pojo,ResponseWriter.OK);
     }
 
